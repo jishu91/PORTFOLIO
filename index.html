@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jishu | Tailwind Explained</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="fixed w-full top-0 bg-white shadow z-50">
+        <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-2xl font-bold text-blue-600">JK</h1>
+
+            <ul class="hidden md:flex gap-8 text-gray-600 font-medium">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+                <li><a href="#work" class="hover:text-blue-600">Work</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="min-h-screen flex items-center pt-24">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+                    Hi,<br>
+                    I’m <span class="text-blue-600">Jishu Kurmi</span><br>
+                    Frontend Developer
+                </h1>
+
+                <p class="mt-4 text-gray-600 max-w-md">
+                    I build responsive and user-friendly websites using modern web technologies.
+                </p>
+
+                <a href="https://drive.google.com/file/d/11tLKxlc7buuKNOZTROVmr1OYsvunBdQB/view?usp=sharing"
+                    class="inline-block mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                    Resume
+                </a>
+
+                <div class="flex gap-6 mt-6 text-2xl text-gray-500">
+                    <a href="https://www.linkedin.com/in/jishu91/" class="hover:text-blue-600">in</a>
+                    <a href="https://github.com/jishu91" class="hover:text-blue-600">gh</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-12">About Me</h2>
+
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-gray-50 p-8 rounded-xl shadow">
+                <h3 class="text-2xl font-semibold mb-4">I'm Jishu Kurmi</h3>
+                <p class="text-gray-600 leading-relaxed">
+                    I am a passionate frontend developer focused on building clean, responsive
+                    and accessible web interfaces.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-12">Skills</h2>
+
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+            <div class="space-y-4">
+                <div class="flex items-center gap-4 bg-white p-4 rounded-lg shadow">
+                    <span class="text-3xl text-orange-500">&#60;/&#62;</span>
+                    <span class="text-lg font-medium">HTML5</span>
+                </div>
+
+                <div class="flex items-center gap-4 bg-white p-4 rounded-lg shadow">
+                    <span class="text-3xl text-blue-500">#</span>
+                    <span class="text-lg font-medium">CSS3</span>
+                </div>
+
+                <div class="flex items-center gap-4 bg-white p-4 rounded-lg shadow">
+                    <span class="text-3xl text-yellow-400">JS</span>
+                    <span class="text-lg font-medium">JavaScript</span>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="work" class="py-20 bg-white">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-12">My Work</h2>
+
+        <div class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="rounded-lg shadow hover:scale-105 transition bg-gray-200 h-40 flex items-center justify-center">
+                <span class="text-gray-600">Project 1</span>
+            </div>
+            <div class="rounded-lg shadow hover:scale-105 transition bg-gray-200 h-40 flex items-center justify-center">
+                <span class="text-gray-600">Project 2</span>
+            </div>
+            <div class="rounded-lg shadow hover:scale-105 transition bg-gray-200 h-40 flex items-center justify-center">
+                <span class="text-gray-600">Project 3</span>
+            </div>
+            <div class="rounded-lg shadow hover:scale-105 transition bg-gray-200 h-40 flex items-center justify-center">
+                <span class="text-gray-600">Project 4</span>
+            </div>
+            <div class="rounded-lg shadow hover:scale-105 transition bg-gray-200 h-40 flex items-center justify-center">
+                <span class="text-gray-600">Project 5</span>
+            </div>
+            <div class="rounded-lg shadow hover:scale-105 transition bg-gray-200 h-40 flex items-center justify-center">
+                <span class="text-gray-600">Project 6</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact" class="py-20">
+        <h2 class="text-3xl font-bold text-center text-blue-600 mb-12">Contact Me</h2>
+
+        <form class="max-w-xl mx-auto px-6 space-y-4 bg-white p-8 rounded-xl shadow">
+            <input type="text" placeholder="Name"
+                class="w-full p-3 rounded border border-gray-300 focus:outline-blue-600" />
+
+            <input type="email" placeholder="Email"
+                class="w-full p-3 rounded border border-gray-300 focus:outline-blue-600" />
+
+            <textarea rows="5" placeholder="Message"
+                class="w-full p-3 rounded border border-gray-300 focus:outline-blue-600"></textarea>
+
+            <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded font-semibold">
+                Send Message
+            </button>
+        </form>
+    </section> -->
+
+    <footer class="bg-white py-6 text-center text-gray-500 border-t">
+        <p>jishukurmi91@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>
